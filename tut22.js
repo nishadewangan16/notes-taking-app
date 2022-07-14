@@ -66,7 +66,7 @@ search.addEventListener("input", function () {
   let notecard = document.getElementsByClassName("notecard");
   Array.from(notecard).forEach(function (element) {
     // console.log("inside foreach notecard", element);
-    let cardTxt = element.getElementByTagName("p")[0].innerText;
+    let cardTxt = element.getElementsByTagName("p")[0].innerText;
     if (cardTxt.includes(inputVal)) {
       element.style.display = "block";
     } else {
